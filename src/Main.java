@@ -2,49 +2,55 @@ import java.util.Scanner;
 
 public class StudentInfoBasic {
     public static void main(String[] args) {
-        
-        Scanner input = new Scanner(System.in);
+      
+        Scanner scanner = new Scanner(System.in);
 
+        
         System.out.println("ENTER STUDENT INFORMATION");
         
         System.out.print("Enter Student ID: ");
-        String studentId = input.nextLine();
+        String studentId = scanner.nextLine();
         
         System.out.print("Enter First Name: ");
-        String firstName = input.nextLine();
+        String firstName = scanner.nextLine();
         
         System.out.print("Enter Last Name: ");
-        String lastName = input.nextLine();
+        String lastName = scanner.nextLine();
         
         System.out.print("Enter Course: ");
-        String course = input.nextLine();
+        String course = scanner.nextLine();
         
         System.out.print("Enter Section: ");
-        String section = input.nextLine();
+        String section = scanner.nextLine();
 
+       
         System.out.println("\nSTUDENT INFORMATION");
         System.out.println("Student ID: " + studentId);
         System.out.println("Student Name: " + firstName + " " + lastName);
         System.out.println("Course: " + course);
         System.out.println("Section: " + section);
 
+      
         System.out.print("\nEnter Midterm Score: ");
-        int midTerm = input.nextInt();
+        int midTerm = scanner.nextInt();
         
         System.out.print("Enter Final Score: ");
-        int finalExam = input.nextInt();
+        int finalExam = scanner.nextInt();
         
         System.out.print("Enter Project Score: ");
-        int project = input.nextInt();
+        int project = scanner.nextInt();
         
         System.out.print("Enter Attendance Score: ");
-        int attendance = input.nextInt();
-      
-        int total = midTerm + finalExam + project + attendance;
-        double average = total / 4.0;
+        int attendance = scanner.nextInt();
 
+        
+        int total = midTerm + finalExam + project + attendance;
+        int average = total /4;
+
+      
         String remarks = (average < 75) ? "FAILED" : "PASSED";
 
+       
         System.out.println("\nSTUDENT SCORE");
         System.out.println("Midterm Exam Score: " + midTerm);
         System.out.println("Final Exam Score: " + finalExam);
@@ -54,6 +60,7 @@ public class StudentInfoBasic {
         System.out.println("\nAverage Score: " + average);
         System.out.println("Remarks: " + remarks);
 
-        input.close();
+      
+        scanner.close();
     }
 }
