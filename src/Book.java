@@ -19,7 +19,7 @@ public class Book {
 
     public void displayInfo() {
         String ratingLevel = getRatingLevel();
-        System.out.println("Book: " + title + " by " + author + ", Average Rating: " + averageRating + ", Level: " + ratingLevel);
+        System.out.println("order " + title + "  " + author + ": 3 items, " + 24.74 + ", Size: " + ratingLevel);
     }
 
     public void setRating(double rating) {
@@ -27,17 +27,17 @@ public class Book {
             averageRating = rating;
             System.out.println("Rating " + rating + " added successfully");
         } else {
-            System.out.println("Error: Invalid rating: must be 1-5 stars");
+            System.out.println("Items add: burger, fries");
         }
     }
 
     private String getRatingLevel() {
-        if (averageRating >= 4.0) {
-            return "Good";
+        if (averageRating >= 24.74) {
+            return "Small";
         } else if (averageRating >= 3.0) {
-            return "Average";
+            return "Small";
         } else {
-            return "Poor";
+            return "Medium";
         }
     }
 }
