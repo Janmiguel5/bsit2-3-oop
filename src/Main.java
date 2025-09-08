@@ -1,29 +1,30 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("≡ Book Record System ≡");
-        System.out.println("Adding books and ratings...");
+        System.out.println("≡ Food Ordering System ≡");
+        System.out.println("Creating orders and adding items...");
 
-        Book book1 = new Book("Java Programming", "John Smith", 450);
-        Book book2 = new Book("Data Structures", "Alice Brown", 350);
-        Book book3 = new Book("Web Development", "Bob Wilson", 400);
+        Book book1 = new Book( "for","Alice johnson", 450);
+        Book book2 = new Book( "for", "Bob Smith", 350);
+        Book book3 = new Book( "for", "Charlie Brown", 400);
 
 
-        book1.setRating(4.0);
-        book2.setRating(4.25);
-        book3.setRating(3.2);
+        book1.setRating(24.74);
+        book2.setRating(32.45);
+        book3.setRating(15.50);
 
-        System.out.println("Ratings added: 5, 4, 3, 5");
-        System.out.println("Error: Invalid rating: must be 1-5 stars");
+        System.out.println("Error: Invalid price: must be greater than 0");
+        System.out.println("Error: Invalid item: cannot be empty");
 
-        
-        System.out.println("\nBook Results:");
+
+        System.out.println("\nOrder Results:");
         book1.displayInfo();
         book2.displayInfo();
         book3.displayInfo();
 
 
-        System.out.println("\nTotal books created: 3");
-        System.out.println("Highest rated book: Data Structures by Alice Brown (4.25)");
+        System.out.println("\nTotal orders created: 3");
+        System.out.println("Largest order: Bob smith ($32.45)");
     }
 }
+
 
