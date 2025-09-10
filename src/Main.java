@@ -1,9 +1,12 @@
 public class Main {
-   public static  void main(String[] args) {
-       System.out.println("Hello world");
-   }
+    public static void main(String[] args) {
+        System.out.println("=== Library Management System ===\n");
 
+        LibraryManager lib = new LibraryManager();
+        lib.showBooks();
+        lib.addBook();
+        lib.removeBook();
 
-
-
+        System.out.println("Program completed successfully.");
+    }
 }
