@@ -1,4 +1,4 @@
-public class Book {
+public class Abstraction - Borrowable Interface{
     private String title;
     private String author;
     private String isbn;
